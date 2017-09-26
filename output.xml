@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170907 11:00:56.351" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="C:\GitRepos_DisplayTesting\balasa6\E2E_Test_Automation\Robot_proj_new\Test_Suite" id="s1" name="Test Suite">
+<suite source="C:\GitRepos_DisplayTesting\balasa6\E2E_Test_Automation\Robot_proj_new\Test_Suite\Plweb_tests.robot" id="s1-s1" name="Plweb tests">
+<kw type="setup" name="PLWEB Login" library="plweb_keywords">
+<doc>Log in to plweb with all inputs</doc>
+<kw name="PLWEB Login as user with username url and password and asset" library="plweb_actions">
+<doc>Initialization function for PL Web.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${USER}</arg>
+<arg>${PSWD}</arg>
+<arg>${ASSETID}</arg>
+</arguments>
+<msg timestamp="20170907 11:00:56.878" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@ng-href='#/tel_home']")</msg>
+<msg timestamp="20170907 11:00:56.878" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@ng-href='#/tel_home']",)</msg>
+<msg timestamp="20170907 11:00:56.878" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@ng-href='#/tel_home']")  'NoneType' object has no attribute 'find_element_by_xpath'</msg>
+<msg timestamp="20170907 11:00:56.878" level="INFO"> lib.plweb / login  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, 'https://qa-productlinkweb.cat.com', 'balasa6', 'Ari5134192111#')</msg>
+<msg timestamp="20170907 11:01:00.302" level="INFO"> lib.webinterface / enter_url  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, 'https://qa-productlinkweb.cat.com')</msg>
+<msg timestamp="20170907 11:01:03.038" level="INFO"> lib.webinterface / wait_till_delay  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='cwsUID']")</msg>
+<msg timestamp="20170907 11:01:03.038" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='cwsUID']",)</msg>
+<msg timestamp="20170907 11:01:03.150" level="INFO"> lib.webinterface / input  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='cwsUID']", 'balasa6')</msg>
+<msg timestamp="20170907 11:01:03.150" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='cwsUID']",)</msg>
+<msg timestamp="20170907 11:01:03.150" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='cwsUID']")</msg>
+<msg timestamp="20170907 11:01:03.150" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='cwsUID']",)</msg>
+<msg timestamp="20170907 11:01:03.150" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='cwsUID']")</msg>
+<msg timestamp="20170907 11:01:03.150" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='cwsUID']",)</msg>
+<msg timestamp="20170907 11:01:03.174" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1670&gt;)</msg>
+<msg timestamp="20170907 11:01:04.287" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C16B0&gt;)</msg>
+<msg timestamp="20170907 11:01:05.887" level="INFO"> lib.webinterface / input  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='cwsPwd']", 'Ari5134192111#')</msg>
+<msg timestamp="20170907 11:01:05.887" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='cwsPwd']",)</msg>
+<msg timestamp="20170907 11:01:05.887" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='cwsPwd']")</msg>
+<msg timestamp="20170907 11:01:05.887" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='cwsPwd']",)</msg>
+<msg timestamp="20170907 11:01:05.887" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='cwsPwd']")</msg>
+<msg timestamp="20170907 11:01:05.887" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='cwsPwd']",)</msg>
+<msg timestamp="20170907 11:01:05.917" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C16F0&gt;)</msg>
+<msg timestamp="20170907 11:01:06.974" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1710&gt;)</msg>
+<msg timestamp="20170907 11:01:09.467" level="INFO"> lib.plweb / submit  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)</msg>
+<msg timestamp="20170907 11:01:09.467" level="INFO"> lib.webinterface / click  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='submitButton']")</msg>
+<msg timestamp="20170907 11:01:09.467" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='submitButton']",)</msg>
+<msg timestamp="20170907 11:01:09.467" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='submitButton']")</msg>
+<msg timestamp="20170907 11:01:09.467" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='submitButton']",)</msg>
+<msg timestamp="20170907 11:01:09.467" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='submitButton']")</msg>
+<msg timestamp="20170907 11:01:09.467" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='submitButton']",)</msg>
+<msg timestamp="20170907 11:01:09.496" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C18B0&gt;)</msg>
+<msg timestamp="20170907 11:01:10.552" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1930&gt;)</msg>
+<msg timestamp="20170907 11:01:14.396" level="INFO"> lib.webinterface / wait_till_delay  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@class="catlogo"]')</msg>
+<msg timestamp="20170907 11:01:14.396" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@class="catlogo"]',)</msg>
+<msg timestamp="20170907 11:01:18.091" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@class="catlogo"]')</msg>
+<msg timestamp="20170907 11:01:18.091" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@class="catlogo"]',)</msg>
+<msg timestamp="20170907 11:01:18.211" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1AF0&gt;)</msg>
+<msg timestamp="20170907 11:01:19.289" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@id="login_status"]')</msg>
+<msg timestamp="20170907 11:01:19.289" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@id="login_status"]',)</msg>
+<msg timestamp="20170907 11:01:22.315" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@id="login_status"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id="login_status"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:01:22.315" level="INFO"> lib.webinterface / clear_web_alerts  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)</msg>
+<msg timestamp="20170907 11:01:22.315" level="ERROR">'WebDriver' object has no attribute 'switch_to'</msg>
+<msg timestamp="20170907 11:01:22.316" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')</msg>
+<msg timestamp="20170907 11:01:22.316" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customAlert.ok()"]',)</msg>
+<msg timestamp="20170907 11:01:22.316" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')</msg>
+<msg timestamp="20170907 11:01:22.316" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customAlert.ok()"]',)</msg>
+<msg timestamp="20170907 11:01:25.343" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customAlert.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:01:25.343" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:01:25.343" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')</msg>
+<msg timestamp="20170907 11:01:25.343" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customConfirm.ok()"]',)</msg>
+<msg timestamp="20170907 11:01:25.343" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')</msg>
+<msg timestamp="20170907 11:01:25.343" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customConfirm.ok()"]',)</msg>
+<msg timestamp="20170907 11:01:28.366" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customConfirm.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:01:28.366" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:01:28.367" level="INFO"> lib.webinterface / clear_web_alerts  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)</msg>
+<msg timestamp="20170907 11:01:28.367" level="ERROR">'WebDriver' object has no attribute 'switch_to'</msg>
+<msg timestamp="20170907 11:01:28.367" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')</msg>
+<msg timestamp="20170907 11:01:28.367" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customAlert.ok()"]',)</msg>
+<msg timestamp="20170907 11:01:28.367" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')</msg>
+<msg timestamp="20170907 11:01:28.367" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customAlert.ok()"]',)</msg>
+<msg timestamp="20170907 11:01:31.381" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customAlert.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:01:31.382" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:01:31.382" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')</msg>
+<msg timestamp="20170907 11:01:31.382" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customConfirm.ok()"]',)</msg>
+<msg timestamp="20170907 11:01:31.382" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')</msg>
+<msg timestamp="20170907 11:01:31.382" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customConfirm.ok()"]',)</msg>
+<msg timestamp="20170907 11:01:34.408" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customConfirm.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:01:34.409" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:01:34.409" level="INFO"> lib.webinterface / clear_web_alerts  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)</msg>
+<msg timestamp="20170907 11:01:34.409" level="ERROR">'WebDriver' object has no attribute 'switch_to'</msg>
+<msg timestamp="20170907 11:01:34.409" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')</msg>
+<msg timestamp="20170907 11:01:34.409" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customAlert.ok()"]',)</msg>
+<msg timestamp="20170907 11:01:34.409" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')</msg>
+<msg timestamp="20170907 11:01:34.409" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customAlert.ok()"]',)</msg>
+<msg timestamp="20170907 11:01:37.482" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customAlert.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:01:37.483" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:01:37.483" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')</msg>
+<msg timestamp="20170907 11:01:37.483" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customConfirm.ok()"]',)</msg>
+<msg timestamp="20170907 11:01:37.483" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')</msg>
+<msg timestamp="20170907 11:01:37.483" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customConfirm.ok()"]',)</msg>
+<msg timestamp="20170907 11:01:40.548" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customConfirm.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:01:40.548" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:01:40.548" level="INFO"> lib.webinterface / wait_till_delay  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='MapPushpinBase']", 60)</msg>
+<msg timestamp="20170907 11:01:40.549" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@class='MapPushpinBase']",)</msg>
+<msg timestamp="20170907 11:01:40.617" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@ng-href='#/tel_home']")</msg>
+<msg timestamp="20170907 11:01:40.617" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@ng-href='#/tel_home']",)</msg>
+<msg timestamp="20170907 11:01:40.644" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADB10&gt;)</msg>
+<msg timestamp="20170907 11:01:42.697" level="INFO"> lib.plweb / global_search  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, 'QPE64102')</msg>
+<msg timestamp="20170907 11:01:42.697" level="INFO"> lib.webinterface / click  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@class="search"]')</msg>
+<msg timestamp="20170907 11:01:42.697" level="INFO"> lib.webinterface / generate_xpath_structure  ('//*[@class="search"]',)</msg>
+<msg timestamp="20170907 11:01:42.697" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@class="search"]')</msg>
+<msg timestamp="20170907 11:01:42.697" level="INFO"> lib.webinterface / generate_xpath_structure  ('//*[@class="search"]',)</msg>
+<msg timestamp="20170907 11:01:42.697" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@class="search"]')</msg>
+<msg timestamp="20170907 11:01:42.697" level="INFO"> lib.webinterface / generate_xpath_structure  ('//*[@class="search"]',)</msg>
+<msg timestamp="20170907 11:01:42.725" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADBD0&gt;)</msg>
+<msg timestamp="20170907 11:01:43.783" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADDD0&gt;)</msg>
+<msg timestamp="20170907 11:01:46.905" level="INFO"> lib.webinterface / input  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/input[@ng-model='searchTerm']", 'QPE64102')</msg>
+<msg timestamp="20170907 11:01:46.905" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/input[@ng-model='searchTerm']",)</msg>
+<msg timestamp="20170907 11:01:46.905" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/input[@ng-model='searchTerm']")</msg>
+<msg timestamp="20170907 11:01:46.905" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/input[@ng-model='searchTerm']",)</msg>
+<msg timestamp="20170907 11:01:46.905" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/input[@ng-model='searchTerm']")</msg>
+<msg timestamp="20170907 11:01:46.905" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/input[@ng-model='searchTerm']",)</msg>
+<msg timestamp="20170907 11:01:46.935" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADDB0&gt;)</msg>
+<msg timestamp="20170907 11:01:47.991" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADC90&gt;)</msg>
+<msg timestamp="20170907 11:01:52.727" level="INFO"> lib.webinterface / click  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/button[text()='GO']")</msg>
+<msg timestamp="20170907 11:01:52.727" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/button[text()='GO']",)</msg>
+<msg timestamp="20170907 11:01:52.727" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/button[text()='GO']")</msg>
+<msg timestamp="20170907 11:01:52.727" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/button[text()='GO']",)</msg>
+<msg timestamp="20170907 11:01:52.727" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/button[text()='GO']")</msg>
+<msg timestamp="20170907 11:01:52.727" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/button[text()='GO']",)</msg>
+<msg timestamp="20170907 11:01:52.757" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADDB0&gt;)</msg>
+<msg timestamp="20170907 11:01:53.814" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADC90&gt;)</msg>
+<msg timestamp="20170907 11:02:03.938" level="INFO"> lib.webinterface / get_value  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")</msg>
+<msg timestamp="20170907 11:02:03.938" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='unpinnedContainer']/div[3]/div/div",)</msg>
+<msg timestamp="20170907 11:02:03.938" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")</msg>
+<msg timestamp="20170907 11:02:03.938" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='unpinnedContainer']/div[3]/div/div",)</msg>
+<msg timestamp="20170907 11:02:03.938" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")</msg>
+<msg timestamp="20170907 11:02:03.938" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='unpinnedContainer']/div[3]/div/div",)</msg>
+<msg timestamp="20170907 11:02:06.993" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id=\'unpinnedContainer\']/div[3]/div/div"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:02:06.994" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:02:06.994" level="INFO"> lib.webinterface / wait_till_delay  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[text()='QPE64102']")</msg>
+<msg timestamp="20170907 11:02:06.994" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[text()='QPE64102']",)</msg>
+<msg timestamp="20170907 11:02:07.048" level="INFO"> lib.webinterface / jclick  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@identifier="SerialNumber"]/div/a')</msg>
+<msg timestamp="20170907 11:02:07.077" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADDB0&gt;)</msg>
+<msg timestamp="20170907 11:02:07.111" level="INFO"> lib.webinterface / wait_till_delay  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@ng-if="rowData.dateLastReported12Hour"]', 30)</msg>
+<msg timestamp="20170907 11:02:07.111" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@ng-if="rowData.dateLastReported12Hour"]',)</msg>
+<msg timestamp="20170907 11:02:07.476" level="INFO">lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@ng-href='#/tel_home']")
+ lib.webinterface / generate_xpath_structure  (".//*[@ng-href='#/tel_home']",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@ng-href='#/tel_home']")  'NoneType' object has no attribute 'find_element_by_xpath'
+ lib.plweb / login  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, 'https://qa-productlinkweb.cat.com', 'balasa6', 'Ari5134192111#')
+ lib.webinterface / enter_url  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, 'https://qa-productlinkweb.cat.com')
+ lib.webinterface / wait_till_delay  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='cwsUID']")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='cwsUID']",)
+ lib.webinterface / input  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='cwsUID']", 'balasa6')
+ lib.webinterface / generate_xpath_structure  (".//*[@id='cwsUID']",)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='cwsUID']")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='cwsUID']",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='cwsUID']")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='cwsUID']",)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1670&gt;)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C16B0&gt;)
+ lib.webinterface / input  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='cwsPwd']", 'Ari5134192111#')
+ lib.webinterface / generate_xpath_structure  (".//*[@id='cwsPwd']",)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='cwsPwd']")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='cwsPwd']",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='cwsPwd']")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='cwsPwd']",)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C16F0&gt;)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1710&gt;)
+ lib.plweb / submit  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)
+ lib.webinterface / click  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='submitButton']")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='submitButton']",)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='submitButton']")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='submitButton']",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='submitButton']")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='submitButton']",)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C18B0&gt;)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1930&gt;)
+ lib.webinterface / wait_till_delay  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@class="catlogo"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@class="catlogo"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@class="catlogo"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@class="catlogo"]',)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1AF0&gt;)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@id="login_status"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@id="login_status"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@id="login_status"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id="login_status"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' 
+ lib.webinterface / clear_web_alerts  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customAlert.ok()"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customAlert.ok()"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customAlert.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' 
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customConfirm.ok()"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customConfirm.ok()"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customConfirm.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' 
+ lib.webinterface / clear_web_alerts  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customAlert.ok()"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customAlert.ok()"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customAlert.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' 
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customConfirm.ok()"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customConfirm.ok()"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customConfirm.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' 
+ lib.webinterface / clear_web_alerts  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customAlert.ok()"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customAlert.ok()"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customAlert.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' 
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customConfirm.ok()"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@onclick="window.customConfirm.ok()"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customConfirm.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' 
+ lib.webinterface / wait_till_delay  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='MapPushpinBase']", 60)
+ lib.webinterface / generate_xpath_structure  (".//*[@class='MapPushpinBase']",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@ng-href='#/tel_home']")
+ lib.webinterface / generate_xpath_structure  (".//*[@ng-href='#/tel_home']",)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADB10&gt;)
+ lib.plweb / global_search  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, 'QPE64102')
+ lib.webinterface / click  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@class="search"]')
+ lib.webinterface / generate_xpath_structure  ('//*[@class="search"]',)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@class="search"]')
+ lib.webinterface / generate_xpath_structure  ('//*[@class="search"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@class="search"]')
+ lib.webinterface / generate_xpath_structure  ('//*[@class="search"]',)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADBD0&gt;)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADDD0&gt;)
+ lib.webinterface / input  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/input[@ng-model='searchTerm']", 'QPE64102')
+ lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/input[@ng-model='searchTerm']",)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/input[@ng-model='searchTerm']")
+ lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/input[@ng-model='searchTerm']",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/input[@ng-model='searchTerm']")
+ lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/input[@ng-model='searchTerm']",)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADDB0&gt;)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADC90&gt;)
+ lib.webinterface / click  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/button[text()='GO']")
+ lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/button[text()='GO']",)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/button[text()='GO']")
+ lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/button[text()='GO']",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/button[text()='GO']")
+ lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/button[text()='GO']",)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADDB0&gt;)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADC90&gt;)
+ lib.webinterface / get_value  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='unpinnedContainer']/div[3]/div/div",)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='unpinnedContainer']/div[3]/div/div",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='unpinnedContainer']/div[3]/div/div",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id=\'unpinnedContainer\']/div[3]/div/div"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' 
+ lib.webinterface / wait_till_delay  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[text()='QPE64102']")
+ lib.webinterface / generate_xpath_structure  (".//*[text()='QPE64102']",)
+ lib.webinterface / jclick  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@identifier="SerialNumber"]/div/a')
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035ADDB0&gt;)
+ lib.webinterface / wait_till_delay  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@ng-if="rowData.dateLastReported12Hour"]', 30)
+ lib.webinterface / generate_xpath_structure  ('.//*[@ng-if="rowData.dateLastReported12Hour"]',)</msg>
+<status status="PASS" endtime="20170907 11:02:07.476" starttime="20170907 11:00:56.878"></status>
+</kw>
+<status status="PASS" endtime="20170907 11:02:07.477" starttime="20170907 11:00:56.877"></status>
+</kw>
+<test id="s1-s1-t1" name="TC 166252 Location_001_MP_Location in hoursloc message">
+<kw name="PLWEB Get asset hoursloc" library="plweb_keywords">
+<assign>
+<var>${text}</var>
+</assign>
+<kw name="PLWEB Get hourloc for an asset" library="plweb_actions">
+<arguments>
+<arg>${ASSETID}</arg>
+</arguments>
+<assign>
+<var>${val}</var>
+</assign>
+<msg timestamp="20170907 11:02:07.478" level="INFO"> lib.plweb.equipdetailspage.equipdetailspage / go_to_details_page  (&lt;lib.plweb.equipdetailspage.equipdetailspage.EquipmentDetailsPage object at 0x035ADED0&gt;, 'QPE64102')</msg>
+<msg timestamp="20170907 11:02:07.478" level="INFO"> lib.plweb / global_search  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, 'QPE64102')</msg>
+<msg timestamp="20170907 11:02:07.478" level="INFO"> lib.webinterface / click  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@class="search"]')</msg>
+<msg timestamp="20170907 11:02:07.478" level="INFO"> lib.webinterface / generate_xpath_structure  ('//*[@class="search"]',)</msg>
+<msg timestamp="20170907 11:02:07.478" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@class="search"]')</msg>
+<msg timestamp="20170907 11:02:07.478" level="INFO"> lib.webinterface / generate_xpath_structure  ('//*[@class="search"]',)</msg>
+<msg timestamp="20170907 11:02:07.478" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@class="search"]')</msg>
+<msg timestamp="20170907 11:02:07.479" level="INFO"> lib.webinterface / generate_xpath_structure  ('//*[@class="search"]',)</msg>
+<msg timestamp="20170907 11:02:07.512" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1DB0&gt;)</msg>
+<msg timestamp="20170907 11:02:08.570" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1CD0&gt;)</msg>
+<msg timestamp="20170907 11:02:11.648" level="INFO"> lib.webinterface / input  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/input[@ng-model='searchTerm']", 'QPE64102')</msg>
+<msg timestamp="20170907 11:02:11.648" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/input[@ng-model='searchTerm']",)</msg>
+<msg timestamp="20170907 11:02:11.648" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/input[@ng-model='searchTerm']")</msg>
+<msg timestamp="20170907 11:02:11.648" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/input[@ng-model='searchTerm']",)</msg>
+<msg timestamp="20170907 11:02:11.648" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/input[@ng-model='searchTerm']")</msg>
+<msg timestamp="20170907 11:02:11.648" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/input[@ng-model='searchTerm']",)</msg>
+<msg timestamp="20170907 11:02:11.668" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1F10&gt;)</msg>
+<msg timestamp="20170907 11:02:12.721" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1EB0&gt;)</msg>
+<msg timestamp="20170907 11:02:17.324" level="INFO"> lib.webinterface / click  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/button[text()='GO']")</msg>
+<msg timestamp="20170907 11:02:17.324" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/button[text()='GO']",)</msg>
+<msg timestamp="20170907 11:02:17.324" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/button[text()='GO']")</msg>
+<msg timestamp="20170907 11:02:17.324" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/button[text()='GO']",)</msg>
+<msg timestamp="20170907 11:02:17.324" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/button[text()='GO']")</msg>
+<msg timestamp="20170907 11:02:17.324" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/button[text()='GO']",)</msg>
+<msg timestamp="20170907 11:02:17.355" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1E90&gt;)</msg>
+<msg timestamp="20170907 11:02:18.413" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1FF0&gt;)</msg>
+<msg timestamp="20170907 11:02:28.513" level="INFO"> lib.webinterface / get_value  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")</msg>
+<msg timestamp="20170907 11:02:28.513" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='unpinnedContainer']/div[3]/div/div",)</msg>
+<msg timestamp="20170907 11:02:28.513" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")</msg>
+<msg timestamp="20170907 11:02:28.513" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='unpinnedContainer']/div[3]/div/div",)</msg>
+<msg timestamp="20170907 11:02:28.513" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")</msg>
+<msg timestamp="20170907 11:02:28.513" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='unpinnedContainer']/div[3]/div/div",)</msg>
+<msg timestamp="20170907 11:02:31.565" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id=\'unpinnedContainer\']/div[3]/div/div"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:02:31.565" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:02:31.565" level="INFO"> lib.webinterface / wait_till_delay  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[text()='QPE64102']")</msg>
+<msg timestamp="20170907 11:02:31.565" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[text()='QPE64102']",)</msg>
+<msg timestamp="20170907 11:02:31.620" level="INFO"> lib.webinterface / jclick  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@identifier="SerialNumber"]/div/a')</msg>
+<msg timestamp="20170907 11:02:31.648" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1EB0&gt;)</msg>
+<msg timestamp="20170907 11:02:31.697" level="INFO"> lib.webinterface / wait_till_delay  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@ng-if="rowData.dateLastReported12Hour"]', 30)</msg>
+<msg timestamp="20170907 11:02:31.697" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@ng-if="rowData.dateLastReported12Hour"]',)</msg>
+<msg timestamp="20170907 11:02:36.901" level="INFO"> lib.plweb.equipdetailspage.equipdetailspage / get_gen_engine_hours  (&lt;lib.plweb.equipdetailspage.equipdetailspage.EquipmentDetailsPage object at 0x035ADED0&gt;,)</msg>
+<msg timestamp="20170907 11:02:36.901" level="INFO"> lib.webinterface / get_value  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[3]/div[2]/b')</msg>
+<msg timestamp="20170907 11:02:36.901" level="INFO"> lib.webinterface / generate_xpath_structure  ('//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[3]/div[2]/b',)</msg>
+<msg timestamp="20170907 11:02:36.901" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[3]/div[2]/b')</msg>
+<msg timestamp="20170907 11:02:36.901" level="INFO"> lib.webinterface / generate_xpath_structure  ('//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[3]/div[2]/b',)</msg>
+<msg timestamp="20170907 11:02:36.901" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[3]/div[2]/b')</msg>
+<msg timestamp="20170907 11:02:36.901" level="INFO"> lib.webinterface / generate_xpath_structure  ('//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[3]/div[2]/b',)</msg>
+<msg timestamp="20170907 11:02:36.930" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035AD830&gt;)</msg>
+<msg timestamp="20170907 11:02:38.019" level="INFO"> lib.plweb.equipdetailspage.equipdetailspage / get_location_status  (&lt;lib.plweb.equipdetailspage.equipdetailspage.EquipmentDetailsPage object at 0x035ADED0&gt;,)</msg>
+<msg timestamp="20170907 11:02:38.019" level="INFO"> lib.webinterface / is_displayed  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='currentLocationDiv']")</msg>
+<msg timestamp="20170907 11:02:38.019" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='currentLocationDiv']",)</msg>
+<msg timestamp="20170907 11:02:38.019" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='currentLocationDiv']")</msg>
+<msg timestamp="20170907 11:02:38.019" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='currentLocationDiv']",)</msg>
+<msg timestamp="20170907 11:02:38.019" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='currentLocationDiv']")</msg>
+<msg timestamp="20170907 11:02:38.020" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='currentLocationDiv']",)</msg>
+<msg timestamp="20170907 11:02:41.076" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='currentLocationDiv']")  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id=\'currentLocationDiv\']"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:02:41.077" level="ERROR"> lib.webinterface / is_displayed  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='currentLocationDiv']")  'bool' object has no attribute 'is_displayed'</msg>
+<msg timestamp="20170907 11:02:41.077" level="INFO"> lib.webinterface / click  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@ng-disabled="!isMapLoaded"]')</msg>
+<msg timestamp="20170907 11:02:41.077" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@ng-disabled="!isMapLoaded"]',)</msg>
+<msg timestamp="20170907 11:02:41.077" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@ng-disabled="!isMapLoaded"]')</msg>
+<msg timestamp="20170907 11:02:41.077" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@ng-disabled="!isMapLoaded"]',)</msg>
+<msg timestamp="20170907 11:02:41.077" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@ng-disabled="!isMapLoaded"]')</msg>
+<msg timestamp="20170907 11:02:41.077" level="INFO"> lib.webinterface / generate_xpath_structure  ('.//*[@ng-disabled="!isMapLoaded"]',)</msg>
+<msg timestamp="20170907 11:02:41.105" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035AD830&gt;)</msg>
+<msg timestamp="20170907 11:02:42.163" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035AD870&gt;)</msg>
+<msg timestamp="20170907 11:02:43.313" level="INFO"> lib.webinterface / get_value  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='edpSetLocHrefDiv']")</msg>
+<msg timestamp="20170907 11:02:43.313" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='edpSetLocHrefDiv']",)</msg>
+<msg timestamp="20170907 11:02:43.313" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='edpSetLocHrefDiv']")</msg>
+<msg timestamp="20170907 11:02:43.313" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='edpSetLocHrefDiv']",)</msg>
+<msg timestamp="20170907 11:02:43.313" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='edpSetLocHrefDiv']")</msg>
+<msg timestamp="20170907 11:02:43.313" level="INFO"> lib.webinterface / generate_xpath_structure  (".//*[@id='edpSetLocHrefDiv']",)</msg>
+<msg timestamp="20170907 11:02:43.342" level="INFO"> lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1FB0&gt;)</msg>
+<msg timestamp="20170907 11:02:44.430" level="INFO">lib.plweb.equipdetailspage.equipdetailspage / go_to_details_page  (&lt;lib.plweb.equipdetailspage.equipdetailspage.EquipmentDetailsPage object at 0x035ADED0&gt;, 'QPE64102')
+ lib.plweb / global_search  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, 'QPE64102')
+ lib.webinterface / click  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@class="search"]')
+ lib.webinterface / generate_xpath_structure  ('//*[@class="search"]',)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@class="search"]')
+ lib.webinterface / generate_xpath_structure  ('//*[@class="search"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@class="search"]')
+ lib.webinterface / generate_xpath_structure  ('//*[@class="search"]',)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1DB0&gt;)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1CD0&gt;)
+ lib.webinterface / input  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/input[@ng-model='searchTerm']", 'QPE64102')
+ lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/input[@ng-model='searchTerm']",)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/input[@ng-model='searchTerm']")
+ lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/input[@ng-model='searchTerm']",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/input[@ng-model='searchTerm']")
+ lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/input[@ng-model='searchTerm']",)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1F10&gt;)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1EB0&gt;)
+ lib.webinterface / click  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/button[text()='GO']")
+ lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/button[text()='GO']",)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/button[text()='GO']")
+ lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/button[text()='GO']",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@class='searchSection']/button[text()='GO']")
+ lib.webinterface / generate_xpath_structure  (".//*[@class='searchSection']/button[text()='GO']",)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1E90&gt;)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1FF0&gt;)
+ lib.webinterface / get_value  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='unpinnedContainer']/div[3]/div/div",)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='unpinnedContainer']/div[3]/div/div",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='unpinnedContainer']/div[3]/div/div",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id=\'unpinnedContainer\']/div[3]/div/div"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' 
+ lib.webinterface / wait_till_delay  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[text()='QPE64102']")
+ lib.webinterface / generate_xpath_structure  (".//*[text()='QPE64102']",)
+ lib.webinterface / jclick  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@identifier="SerialNumber"]/div/a')
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1EB0&gt;)
+ lib.webinterface / wait_till_delay  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@ng-if="rowData.dateLastReported12Hour"]', 30)
+ lib.webinterface / generate_xpath_structure  ('.//*[@ng-if="rowData.dateLastReported12Hour"]',)
+ lib.plweb.equipdetailspage.equipdetailspage / get_gen_engine_hours  (&lt;lib.plweb.equipdetailspage.equipdetailspage.EquipmentDetailsPage object at 0x035ADED0&gt;,)
+ lib.webinterface / get_value  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[3]/div[2]/b')
+ lib.webinterface / generate_xpath_structure  ('//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[3]/div[2]/b',)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[3]/div[2]/b')
+ lib.webinterface / generate_xpath_structure  ('//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[3]/div[2]/b',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[3]/div[2]/b')
+ lib.webinterface / generate_xpath_structure  ('//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[3]/div[2]/b',)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035AD830&gt;)
+ lib.plweb.equipdetailspage.equipdetailspage / get_location_status  (&lt;lib.plweb.equipdetailspage.equipdetailspage.EquipmentDetailsPage object at 0x035ADED0&gt;,)
+ lib.webinterface / is_displayed  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='currentLocationDiv']")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='currentLocationDiv']",)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='currentLocationDiv']")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='currentLocationDiv']",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='currentLocationDiv']")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='currentLocationDiv']",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='currentLocationDiv']")  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id=\'currentLocationDiv\']"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' 
+ lib.webinterface / is_displayed  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='currentLocationDiv']")  'bool' object has no attribute 'is_displayed'
+ lib.webinterface / click  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@ng-disabled="!isMapLoaded"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@ng-disabled="!isMapLoaded"]',)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@ng-disabled="!isMapLoaded"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@ng-disabled="!isMapLoaded"]',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@ng-disabled="!isMapLoaded"]')
+ lib.webinterface / generate_xpath_structure  ('.//*[@ng-disabled="!isMapLoaded"]',)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035AD830&gt;)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035AD870&gt;)
+ lib.webinterface / get_value  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='edpSetLocHrefDiv']")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='edpSetLocHrefDiv']",)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='edpSetLocHrefDiv']")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='edpSetLocHrefDiv']",)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='edpSetLocHrefDiv']")
+ lib.webinterface / generate_xpath_structure  (".//*[@id='edpSetLocHrefDiv']",)
+ lib.webinterface / scroll_to_view_element  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, &lt;selenium.webdriver.remote.webelement.WebElement object at 0x035C1FB0&gt;)
+724.8 InValid N.A. N.A.</msg>
+<msg timestamp="20170907 11:02:44.430" level="INFO">${val} = (u'724.8', 'InValid', 'N.A.', 'N.A.')</msg>
+<status status="PASS" endtime="20170907 11:02:44.430" starttime="20170907 11:02:07.478"></status>
+</kw>
+<msg timestamp="20170907 11:02:44.430" level="INFO">${text} = (u'724.8', 'InValid', 'N.A.', 'N.A.')</msg>
+<status status="PASS" endtime="20170907 11:02:44.430" starttime="20170907 11:02:07.477"></status>
+</kw>
+<kw type="teardown" name="PLWEB Close windows" library="plweb_keywords">
+<kw name="Close Plweb" library="plweb_actions">
+<msg timestamp="20170907 11:02:44.431" level="INFO"> lib.plweb / close_plweb_browser  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)</msg>
+<msg timestamp="20170907 11:02:44.431" level="INFO"> lib.webinterface / close  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)</msg>
+<msg timestamp="20170907 11:02:47.595" level="INFO">lib.plweb / close_plweb_browser  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)
+ lib.webinterface / close  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)</msg>
+<status status="PASS" endtime="20170907 11:02:47.595" starttime="20170907 11:02:44.431"></status>
+</kw>
+<status status="PASS" endtime="20170907 11:02:47.595" starttime="20170907 11:02:44.431"></status>
+</kw>
+<tags>
+<tag>166252</tag>
+<tag>Location</tag>
+<tag>plweb</tag>
+</tags>
+<status status="PASS" endtime="20170907 11:02:47.595" critical="yes" starttime="20170907 11:02:07.477"></status>
+</test>
+<test id="s1-s1-t2" name="TC 240787 Asset Status_006_xP_Not Available">
+<kw name="PLWEB Asset Status" library="plweb_keywords">
+<assign>
+<var>${text}</var>
+</assign>
+<kw name="PLWEB Get asset status" library="plweb_actions">
+<arguments>
+<arg>${ASSETID}</arg>
+</arguments>
+<assign>
+<var>${val}</var>
+</assign>
+<msg timestamp="20170907 11:02:47.596" level="INFO"> lib.plweb.equipdetailspage.equipdetailspage / go_to_details_page  (&lt;lib.plweb.equipdetailspage.equipdetailspage.EquipmentDetailsPage object at 0x035ADED0&gt;, 'QPE64102')</msg>
+<msg timestamp="20170907 11:02:47.596" level="INFO"> lib.webinterface / enter_url  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, u'https://qa-productlinkweb.cat.com/#/EDPpage/1220460/false/true')</msg>
+<msg timestamp="20170907 11:02:48.597" level="ERROR"> lib.webinterface / enter_url  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, u'https://qa-productlinkweb.cat.com/#/EDPpage/1220460/false/true')  [Errno 10061] No connection could be made because the target machine actively refused it</msg>
+<msg timestamp="20170907 11:02:53.597" level="INFO"> lib.plweb.equipdetailspage.equipdetailspage / get_gen_last_reported_status  (&lt;lib.plweb.equipdetailspage.equipdetailspage.EquipmentDetailsPage object at 0x035ADED0&gt;,)</msg>
+<msg timestamp="20170907 11:02:53.597" level="INFO"> lib.webinterface / get_value  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span')</msg>
+<msg timestamp="20170907 11:02:53.597" level="INFO"> lib.webinterface / generate_xpath_structure  ('//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span',)</msg>
+<msg timestamp="20170907 11:02:53.597" level="INFO"> lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span')</msg>
+<msg timestamp="20170907 11:02:53.597" level="INFO"> lib.webinterface / generate_xpath_structure  ('//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span',)</msg>
+<msg timestamp="20170907 11:02:53.597" level="INFO"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span')</msg>
+<msg timestamp="20170907 11:02:53.597" level="INFO"> lib.webinterface / generate_xpath_structure  ('//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span',)</msg>
+<msg timestamp="20170907 11:02:53.598" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span')  </msg>
+<msg timestamp="20170907 11:02:53.598" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:02:53.598" level="INFO">lib.plweb.equipdetailspage.equipdetailspage / go_to_details_page  (&lt;lib.plweb.equipdetailspage.equipdetailspage.EquipmentDetailsPage object at 0x035ADED0&gt;, 'QPE64102')
+ lib.webinterface / enter_url  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, u'https://qa-productlinkweb.cat.com/#/EDPpage/1220460/false/true')
+ lib.webinterface / enter_url  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, u'https://qa-productlinkweb.cat.com/#/EDPpage/1220460/false/true')  [Errno 10061] No connection could be made because the target machine actively refused it
+ lib.plweb.equipdetailspage.equipdetailspage / get_gen_last_reported_status  (&lt;lib.plweb.equipdetailspage.equipdetailspage.EquipmentDetailsPage object at 0x035ADED0&gt;,)
+ lib.webinterface / get_value  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span')
+ lib.webinterface / generate_xpath_structure  ('//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span',)
+ lib.webinterface / find_element_by_xpath  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span')
+ lib.webinterface / generate_xpath_structure  ('//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span')
+ lib.webinterface / generate_xpath_structure  ('//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span',)
+ lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span')</msg>
+<msg timestamp="20170907 11:02:53.598" level="INFO">${val} = No Data</msg>
+<status status="PASS" endtime="20170907 11:02:53.598" starttime="20170907 11:02:47.596"></status>
+</kw>
+<msg timestamp="20170907 11:02:53.598" level="INFO">${text} = No Data</msg>
+<status status="PASS" endtime="20170907 11:02:53.598" starttime="20170907 11:02:47.596"></status>
+</kw>
+<kw name="Verify Result" library="plweb_keywords">
+<arguments>
+<arg>No Data</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${Expected}</arg>
+<arg>${Actual}</arg>
+</arguments>
+<msg timestamp="20170907 11:02:53.599" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20170907 11:02:53.599" starttime="20170907 11:02:53.599"></status>
+</kw>
+<status status="PASS" endtime="20170907 11:02:53.599" starttime="20170907 11:02:53.598"></status>
+</kw>
+<tags>
+<tag>240787</tag>
+<tag>Asset_Status</tag>
+<tag>plweb</tag>
+</tags>
+<status status="PASS" endtime="20170907 11:02:53.599" critical="yes" starttime="20170907 11:02:47.595"></status>
+</test>
+<kw type="teardown" name="PLWEB Close windows" library="plweb_keywords">
+<kw name="Close Plweb" library="plweb_actions">
+<msg timestamp="20170907 11:02:53.600" level="INFO"> lib.plweb / close_plweb_browser  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)</msg>
+<msg timestamp="20170907 11:02:53.600" level="INFO"> lib.webinterface / close  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)</msg>
+<msg timestamp="20170907 11:02:54.601" level="ERROR"> lib.webinterface / close  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)  [Errno 10061] No connection could be made because the target machine actively refused it</msg>
+<msg timestamp="20170907 11:02:54.601" level="INFO">lib.plweb / close_plweb_browser  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)
+ lib.webinterface / close  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)
+ lib.webinterface / close  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)  [Errno 10061] No connection could be made because the target machine actively refused it</msg>
+<status status="PASS" endtime="20170907 11:02:54.601" starttime="20170907 11:02:53.600"></status>
+</kw>
+<status status="PASS" endtime="20170907 11:02:54.601" starttime="20170907 11:02:53.600"></status>
+</kw>
+<doc>For Running Assets</doc>
+<status status="PASS" endtime="20170907 11:02:54.601" starttime="20170907 11:00:56.383"></status>
+</suite>
+<status status="PASS" endtime="20170907 11:02:54.603" starttime="20170907 11:00:56.354"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">166252</stat>
+<stat fail="0" pass="1">240787</stat>
+<stat fail="0" pass="1">Asset_Status</stat>
+<stat fail="0" pass="1">Location</stat>
+<stat fail="0" pass="2">plweb</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test Suite" pass="2">Test Suite</stat>
+<stat fail="0" id="s1-s1" name="Plweb tests" pass="2">Test Suite.Plweb tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20170907 11:00:56.878" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@ng-href='#/tel_home']")  'NoneType' object has no attribute 'find_element_by_xpath'</msg>
+<msg timestamp="20170907 11:01:22.315" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@id="login_status"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id="login_status"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:01:22.315" level="ERROR">'WebDriver' object has no attribute 'switch_to'</msg>
+<msg timestamp="20170907 11:01:25.343" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customAlert.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:01:25.343" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:01:28.366" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customConfirm.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:01:28.366" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:01:28.367" level="ERROR">'WebDriver' object has no attribute 'switch_to'</msg>
+<msg timestamp="20170907 11:01:31.381" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customAlert.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:01:31.382" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:01:34.408" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customConfirm.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:01:34.409" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:01:34.409" level="ERROR">'WebDriver' object has no attribute 'switch_to'</msg>
+<msg timestamp="20170907 11:01:37.482" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customAlert.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customAlert.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:01:37.483" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:01:40.548" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, './/*[@onclick="window.customConfirm.ok()"]')  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@onclick="window.customConfirm.ok()"]"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:01:40.548" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:02:06.993" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id=\'unpinnedContainer\']/div[3]/div/div"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:02:06.994" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:02:31.565" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='unpinnedContainer']/div[3]/div/div")  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id=\'unpinnedContainer\']/div[3]/div/div"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:02:31.565" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:02:41.076" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='currentLocationDiv']")  Message: u'no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id=\'currentLocationDiv\']"}\n  (Session info: chrome=60.0.3112.113)\n  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)' </msg>
+<msg timestamp="20170907 11:02:41.077" level="ERROR"> lib.webinterface / is_displayed  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, ".//*[@id='currentLocationDiv']")  'bool' object has no attribute 'is_displayed'</msg>
+<msg timestamp="20170907 11:02:48.597" level="ERROR"> lib.webinterface / enter_url  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, u'https://qa-productlinkweb.cat.com/#/EDPpage/1220460/false/true')  [Errno 10061] No connection could be made because the target machine actively refused it</msg>
+<msg timestamp="20170907 11:02:53.598" level="ERROR"> lib.webinterface / is_element_present  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;, '//*[@id="assetImageCont"]/table/tbody/tr/td[3]/div[1]/div[2]/span')  </msg>
+<msg timestamp="20170907 11:02:53.598" level="ERROR">'bool' object has no attribute 'text'</msg>
+<msg timestamp="20170907 11:02:54.601" level="ERROR"> lib.webinterface / close  (&lt;lib.plweb.ProductLinkWeb object at 0x035ADE70&gt;,)  [Errno 10061] No connection could be made because the target machine actively refused it</msg>
+</errors>
+</robot>
